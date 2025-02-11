@@ -1,2 +1,2 @@
-# Jaganathan---Portfolio
-Jaganathan - Profile
+# Jaganathan.A.R - Portfolio
+Jaganathan.A.R - Profile
