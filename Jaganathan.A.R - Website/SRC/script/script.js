@@ -136,3 +136,18 @@ function sendMail() {
             alert("Email sending failed: " + error.text || error.message || "Unknown error");
         });        
 }
+    // Download CV button
+    const downloadCvBtn = document.getElementById('download-cv');
+    
+    downloadCvBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // In a real scenario, you would link to your actual CV file
+        // For demo purposes, we'll simulate a download
+        const link = document.createElement('a');
+        link.href = 'Assets/Jaganathan.A.R - Resume.pdf';
+        link.download = 'Jaganathan.A.R - Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
